@@ -15,12 +15,12 @@ const Header = () => {
     <Container className="fixed z-99 w-full py-5 !bg-primary/90 backdrop-blur-sm flex items-center justify-between">
       <h3 className="text-sm font-semibold text-white">Ayomide <span className='text-xl text-red-500 font-bold'>.</span></h3>
       <nav className="hidden lg:flex items-center gap-8 text-sm text-white">
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/experience'>Experience</NavLink>
-        <NavLink to='/projects'>Projects</NavLink>
-        <NavLink to='/'>Blogs</NavLink>
-        <NavLink to='/contact'>Contact</NavLink>
-        <NavLink to='/'>CV</NavLink>
+        <NavLink to='/portfolio'>Home</NavLink>
+        <NavLink to='/portfolio/experience'>Experience</NavLink>
+        <NavLink to='/portfolio/projects'>Projects</NavLink>
+        <NavLink to='/portfolio/'>Blogs</NavLink>
+        <NavLink to='/portfolio/contact'>Contact</NavLink>
+        <NavLink to='/portfolio/'>CV</NavLink>
         <button onClick={changeMode} className='w-8 h-8 bg-slate-500 flex justify-center items-center rounded-full'>
           { darkMode ?
             <FaSun className="text-md" /> :
