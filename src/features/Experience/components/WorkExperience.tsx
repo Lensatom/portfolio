@@ -10,7 +10,7 @@ type WorkExperienceType = {
 const WorkExperience = (props:WorkExperienceType) => {
   
   return (
-    <div className="flex flex-col py-24 px-5 bg-gray-100 rounded-md">
+    <div className="flex flex-col py-24 px-5 bg-primary/10 rounded-md">
       <Typography variant="subhead" className="!font-bold">{props.company}</Typography>
       <Typography variant="body" className="!font-semibold opacity-80">{props.position}</Typography>
       <Typography variant="subbody" className="opacity-80">{props.duration}</Typography>

@@ -10,7 +10,7 @@ type ProjectType = {
 const Project = (props:ProjectType) => {
 
   return (
-    <div className="flex flex-col py-24 px-5 bg-gray-100 rounded-md">
+    <div className="flex flex-col py-24 px-5 bg-primary/10 rounded-md">
       <Typography variant="subhead" className="!font-bold">{props.name}</Typography>
       <Typography variant="body" className="!font-semibold opacity-80">{props.niche}</Typography>
       <Typography variant="subbody" className="mt-4">{props.description}</Typography>

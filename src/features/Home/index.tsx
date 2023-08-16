@@ -20,7 +20,7 @@ const Home = () => {
             using serverless technology such as Firebase. 
           </Typography>
           <div className="mt-5 flex gap-4">
-            <Button variant="blue" type="button">Projects</Button>
+            <Button variant="blue" type="button" className="px-10">Projects</Button>
             <Button variant="gray" type="button" className="flex items-center gap-2 font-normal">
               View CV
               <BsBoxArrowUpRight />
@@ -28,16 +28,20 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-2 items-end gap-4 mt-4">
             <div className="col-span-2 flex flex-col">
-              <p className="font-bold text-primary">3+</p>
-              <p className="text-sm text-gray-700 leading-tight">Years of <br className="hidden lg:block" /> experience</p>
+              <Typography variant="body" className="!font-bold">3+</Typography>
+              <Typography variant="subbody">Years of <br className="hidden lg:block" /> experience</Typography>
             </div>
             <div className="flex flex-col">
-              <p className="font-bold text-primary">GitHub</p>
-              <a href="https://github.com/lensatom" className="text-sm text-gray-700 leading-tight w-[fit-content] hover:underline">https://github.com/lensatom</a>
+              <Typography variant="body" className="!font-bold">GitHub</Typography>
+              <Typography variant="subbody" className="leading-tight w-[fit-content] hover:underline">
+                <a href="https://github.com/lensatom">https://github.com/lensatom</a>
+              </Typography>
             </div>
             <div className="flex flex-col">
-              <p className="font-bold text-primary">Contact</p>
-              <a href="" className="text-sm text-gray-700 leading-tight w-[fit-content] hover:underline">ayomidetommiwa@gmail.com</a>
+              <Typography variant="body" className="!font-bold">Contact</Typography>
+              <Typography variant="subbody" className="leading-tight w-[fit-content] hover:underline">
+                <a href="">atayerotommiwa@gmail.com</a>
+              </Typography>
             </div>
           </div>
         </div>

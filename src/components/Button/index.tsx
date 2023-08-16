@@ -1,10 +1,14 @@
+import { useContext } from 'react'
 import { ButtonType } from "./ButtonType"
+import { ModeContext } from '../../context/ModeContext'
 
 const Button = ({ children, className, type, variant, ...rest }:ButtonType) => {
 
+  const { mode } = useContext(ModeContext)
+
   const styles = {
-    blue: "bg-primary text-white",
-    gray: "bg-gray-200 text-gray-700"
+    blue: `${mode === "dark" ? "bg-primary/70 text-gray-300" : "bg-primary text-white"}`,
+    gray: `bg-primary/20 ${mode === "dark" ? "text-gray-300" : "text-gray-700"}`
   }
 
   return (

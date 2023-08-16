@@ -37,10 +37,10 @@ const Footer = () => {
           <NavLink to="/portfolio/blogs">Blogs</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio/blogs">Blogs</NavLink>
+          <NavLink to="/portfolio/contact">Contact</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio/cv">CV</NavLink>
+          <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>CV</a>
         </Typography>
       </div>
       <div className='flex flex-col gap-3'>
