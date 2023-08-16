@@ -25,19 +25,22 @@ const Footer = () => {
         <Typography mode="dark" variant='subhead' className='!bold'>Pages</Typography>
         <div className='bg-gray-500 h-[1px] w-full' />
         <Typography mode="dark" variant="body">
-          <NavLink to="/experience">Experience</NavLink>
+          <NavLink to="/portfolio">Home</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/portfolio/experience">Experience</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/blogs">Blogs</NavLink>
+          <NavLink to="/portfolio/projects">Projects</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/blogs">Blogs</NavLink>
+          <NavLink to="/portfolio/blogs">Blogs</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/cv">CV</NavLink>
+          <NavLink to="/portfolio/blogs">Blogs</NavLink>
+        </Typography>
+        <Typography mode="dark" variant="body">
+          <NavLink to="/portfolio/cv">CV</NavLink>
         </Typography>
       </div>
       <div className='flex flex-col gap-3'>
