@@ -48,7 +48,7 @@ const Home = () => {
         <div className="w-full h-full flex items-center">
         </div>
       </Container>
-      <Container className="lg:h-screen !bg-primary !text-white py-12 flex lg:flex-row flex-col items-start justify-between">
+      <Container className="lg:h-screen !bg-primary/90 !text-white py-12 flex lg:flex-row flex-col items-start justify-between">
         <div className="w-full">
           <Typography mode="dark" variant="subhead">Some of my</Typography>
           <Typography mode="dark" variant="head">Stack Skills</Typography>
@@ -109,7 +109,7 @@ const Home = () => {
           <img src={LeisureImage} alt="Leisure image" className="mt-8 rounded-lg" />
         </div>
       </Container>
-      <Container className="py-10 !bg-primary/80 flex flex-col !gap-8 items-center justify-between">
+      <Container className="py-10 !bg-primary/90 flex flex-col !gap-8 items-center justify-between">
         <div className="w-full">
           <Typography mode="dark" variant="subhead">My future</Typography>
           <Typography mode="dark" variant="head">Prospects</Typography>
