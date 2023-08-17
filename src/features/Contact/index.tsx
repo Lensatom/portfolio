@@ -2,8 +2,7 @@ import { useContext } from 'react'
 import { Button, Container, Line, Typography } from "../../components"
 import ContactImage from "../../assets/contact.jpg"
 import InputField from "./components/InputField"
-import { BsEyeFill, BsPinMap } from "react-icons/bs"
-import NigeriaImage from "../../assets/nigeria.png"
+import { BsPinMap } from "react-icons/bs"
 import { ModeContext } from '../../context/ModeContext'
 
 const Contact = () => {
