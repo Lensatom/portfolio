@@ -10,7 +10,7 @@ const Contact = () => {
   const { mode } = useContext(ModeContext)
 
   return (
-    <Container className="pt-16 lg:pt-24 pb-24 flex flex-col !gap-6">
+    <Container className="py-16 lg:py-24 flex flex-col !gap-6">
       <div className="h-24 lg:h-44 mt-4 w-full overflow-hidden flex items-center">
         <img src={ContactImage} alt="contact image" />
       </div>
@@ -33,10 +33,10 @@ const Contact = () => {
               className={`${mode === "dark" ? "text-gray-300 border-primary/30" : "text-gray-700"} w-full border-2 p-[6px] focus:outline-primary rounded-md bg-transparent text-xs`}
             />
           </div>
-          <div className="block lg:hidden" />
-          <Button variant="blue" type="button" className='col-span-2 lg!py-4'>Send</Button>
+          <div className="hidden" />
+          <Button variant="blue" type="button" className='col-span-2 py-4'>Send</Button>
         </form>
-        <Container className="flex flex-col !px-0 h-full rounded-md">
+        <Container className="py-10 md:py-0 flex flex-col !px-0 h-full rounded-md">
           <div className="py-5 flex flex-col gap-5 px-5">
             <Typography variant="subhead" className="!font-bold flex items-center gap-3">
               <BsPinMap />
@@ -44,7 +44,7 @@ const Contact = () => {
             </Typography>
             <Line />
             <div className="flex flex-col gap-2">
-              <Typography variant="body">ayomidetommiwa@gmail.com</Typography>
+              <Typography variant="body">atayerotommiwa@gmail.com</Typography>
               <Typography variant="subbody">+234-913-6852-885</Typography>
             </div>
           </div>

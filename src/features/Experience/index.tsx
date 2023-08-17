@@ -1,8 +1,8 @@
 import { Container, Line, Typography } from "../../components"
 import Education from "./components/Education"
 import WorkExperience from "./components/WorkExperience"
-import { EducationData } from "./data/EducationData"
-import { ExperienceData } from "./data/ExperienceData"
+import EducationData from "./data/EducationData.json"
+import ExperienceData from "./data/ExperienceData.json"
 import ExperienceImage from "../../assets/experience.jpg"
 import EducationImage from "../../assets/education.jpg"
 

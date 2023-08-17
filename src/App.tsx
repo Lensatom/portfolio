@@ -8,11 +8,11 @@ function App() {
 
   const currentMode = localStorage.getItem("mode");
   const { pathname } = useLocation();
-  const [mode, setMode] = useState("light")
+  const [mode, setMode] = useState("dark")
   
   useEffect(() => {
-    if (currentMode === "dark") {
-      setMode("dark")
+    if (currentMode === "light") {
+      setMode("light")
     }
     window.scrollTo(0, 0)
   }, [pathname])

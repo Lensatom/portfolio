@@ -1,6 +1,6 @@
 import { Container, Line, Typography } from "../../components"
 import Project from "./components/Project"
-import { ProjectsData } from "./data/ProjectsData"
+import ProjectsData from "./data/ProjectsData.json"
 import ProjectsImage from "../../assets/projects.jpg"
 
 const Projects = () => {

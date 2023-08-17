@@ -1,5 +1,5 @@
-import  { useContext, useState } from 'react';
-import { NavLink } from "react-router-dom";
+import  { useContext, useEffect, useState } from 'react';
+import { NavLink, useLocation } from "react-router-dom";
 import { Button, Container, Typography } from "..";
 import { FaBars } from 'react-icons/fa'
 import { ModeContext } from '../../context/ModeContext';
@@ -8,8 +8,13 @@ import More from './components/More';
 
 const Header = () => {
   
+  const { pathname } = useLocation()
   const { mode, setMode } = useContext(ModeContext);
-  const [ moreStatus, setMoreStatus ] = useState(false)
+  const [ moreStatus, setMoreStatus ] = useState(false);
+
+  useEffect(() => {
+    setMoreStatus(false);
+  }, [pathname])
 
   const changeMode = () => {
     if (mode === "light") {
@@ -28,7 +33,7 @@ const Header = () => {
   return (
     <>
       {moreStatus && <More closeMore={() => {setMoreStatus(false)}} />}
-      <Container className="w-full py-6 bg-primary/10 backdrop-blur-sm flex items-center justify-between">
+      <Container className="w-full py-5 md:py-6 bg-primary/10 backdrop-blur-sm flex items-center justify-between">
         <Typography variant="subhead" className='flex gap-1 items-baseline'>
           Ayomide
           <div className='w-1 h-1 bg-red-500 font-bold rounded-full'></div>

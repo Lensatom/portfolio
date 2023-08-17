@@ -3,7 +3,7 @@ import { Button, Container, Line, Typography } from "../../components"
 import SkillsImage from '../../assets/skills.jpg'
 import LeisureImage from '../../assets/leisure.jpg'
 import ProspectsImage from '../../assets/prospects.jpg'
-import { SkillsData } from "./data/SkillsData"
+import SkillsData from "./data/SkillsData.json"
 import Skill from "./components/Skill"
 
 const Home = () => {

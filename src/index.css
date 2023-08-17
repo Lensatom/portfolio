@@ -9,9 +9,9 @@
 @keyframes open {
   from {
     transform: translateY(-50px);
-    gap: 10px;
+    gap: 5px;
   } to {
     transform: translateY(0px);
-    gap: 32px;
+    gap: 24px;
   }
 }
