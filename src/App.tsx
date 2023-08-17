@@ -23,11 +23,11 @@ function App() {
         <Header />
         <div className={`${mode === "dark" ? "bg-gray-500" : "bg-gray-50"} pt-16`}>
           <Routes>
-            <Route path="/portfolio" element={<Home />} />
-            <Route path="/portfolio/experience" element={<Experience />} />
-            <Route path="/portfolio/projects" element={<Projects />} />
-            <Route path="/portfolio/blogs" element={<Blogs />} />
-            <Route path="/portfolio/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />

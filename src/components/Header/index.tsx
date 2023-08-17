@@ -22,11 +22,11 @@ const Header = () => {
     <Container className="fixed z-[99] w-full py-5 !bg-primary/90 backdrop-blur-sm flex items-center justify-between">
       <h3 className="text-sm font-semibold text-white">Ayomide <span className='text-xl text-red-500 font-bold'>.</span></h3>
       <nav className="hidden lg:flex items-center gap-8 text-sm text-white">
-        <NavLink to='/portfolio'>Home</NavLink>
-        <NavLink to='/portfolio/experience'>Experience</NavLink>
-        <NavLink to='/portfolio/projects'>Projects</NavLink>
-        <NavLink to='/portfolio/blogs'>Blogs</NavLink>
-        <NavLink to='/portfolio/contact'>Contact</NavLink>
+        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/experience'>Experience</NavLink>
+        <NavLink to='/projects'>Projects</NavLink>
+        <NavLink to='/blogs'>Blogs</NavLink>
+        <NavLink to='/contact'>Contact</NavLink>
         <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>CV</a>
         <button onClick={changeMode} className='w-8 h-8 bg-slate-500 flex justify-center items-center rounded-full'>
           { mode === "dark" ?

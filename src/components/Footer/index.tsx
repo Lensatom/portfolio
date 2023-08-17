@@ -25,19 +25,19 @@ const Footer = () => {
         <Typography mode="dark" variant='subhead' className='!bold'>Pages</Typography>
         <div className='bg-gray-500 h-[1px] w-full' />
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio/experience">Experience</NavLink>
+          <NavLink to="/experience">Experience</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio/projects">Projects</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio/blogs">Blogs</NavLink>
+          <NavLink to="/blogs">Blogs</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/portfolio/contact">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
           <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>CV</a>
