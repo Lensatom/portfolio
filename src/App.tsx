@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from "react-router-dom"
-import { Footer, Header } from "./components"
+import { Footer, Header, Line } from "./components"
 import { Blogs, Contact, Experience, Home, Projects } from "./features"
 import { ModeContext } from './context/ModeContext';
 
@@ -19,9 +19,12 @@ function App() {
 
   return (
     <ModeContext.Provider value={{mode, setMode}}>
-      <div>
-        <Header />
-        <div className={`${mode === "dark" ? "bg-gray-500" : "bg-gray-50"} pt-16`}>
+      <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"}`}>
+        <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} w-full fixed`}>
+          <Header />
+          <Line />
+        </div>
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<Experience />} />
@@ -30,7 +33,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <Footer />
+        <div className='bg-[#121212]'>
+          <Footer />
+        </div>
       </div>
     </ModeContext.Provider>
   )

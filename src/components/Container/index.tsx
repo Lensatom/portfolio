@@ -12,7 +12,7 @@ const Container = (props:ContainerType) => {
   } = props;
 
   return (
-    <div className={`${className} ${mode === "dark" ? "bg-gray-500" : "bg-gray-50"} px-3 lg:px-44 gap-10`}>{children}</div>
+    <div className={`${className} ${mode === "dark" ? "bg-primary/10" : "bg-gray-100"} px-3 md:px-8 lg:px-44 gap-10`}>{children}</div>
   )
 }
 

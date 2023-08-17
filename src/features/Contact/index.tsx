@@ -14,9 +14,9 @@ const Contact = () => {
       <div className="h-36 lg:h-52 mt-4 w-full overflow-hidden flex items-center">
         <img src={ContactImage} alt="contact image" />
       </div>
-      <Typography variant="head">Get in touch</Typography>
+      <Typography variant="head" className='md:pb-5'>Get in touch</Typography>
       <Line />
-      <div className="grid grid-cols-1 lg:grid-cols-2 pt-5 gap-12 items-center">
+      <div className="md:py-12 grid grid-cols-1 lg:grid-cols-2 pt-5 gap-12 items-center">
         <form className="grid grid-cols-2 gap-x-4 gap-y-5">
           <InputField label="Full name" className="col-span-2 lg:col-span-1" />
           <InputField type="email" label="Email Address" className="col-span-2 lg:col-span-1" />
