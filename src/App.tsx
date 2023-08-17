@@ -20,7 +20,7 @@ function App() {
   return (
     <ModeContext.Provider value={{mode, setMode}}>
       <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"}`}>
-        <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} w-full fixed`}>
+        <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} z-[99] w-full fixed`}>
           <Header />
           <Line />
         </div>

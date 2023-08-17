@@ -6,8 +6,8 @@ import BlogsImage from '../../assets/blogs.jpg'
 const Blogs = () => {
 
   return (
-    <Container className="pb-10 flex flex-col !gap-6">
-      <div className="h-36 lg:h-52 mt-4 w-full overflow-hidden flex items-center">
+    <Container className="pt-16 lg:pt-24 pb-10 flex flex-col !gap-6">
+      <div className="h-24 lg:h-44 mt-4 w-full overflow-hidden flex items-center">
         <img src={BlogsImage} alt="contact image" />
       </div>
       <Typography variant="head">Blogs</Typography>

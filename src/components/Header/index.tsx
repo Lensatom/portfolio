@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <>
       {moreStatus && <More closeMore={() => {setMoreStatus(false)}} />}
-      <Container className="z-[98] w-full py-6 bg-primary/10 backdrop-blur-sm flex items-center justify-between">
+      <Container className="w-full py-6 bg-primary/10 backdrop-blur-sm flex items-center justify-between">
         <Typography variant="subhead" className='flex gap-1 items-baseline'>
           Ayomide
           <div className='w-1 h-1 bg-red-500 font-bold rounded-full'></div>

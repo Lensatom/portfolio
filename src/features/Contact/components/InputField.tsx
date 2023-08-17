@@ -20,7 +20,7 @@ const InputField = ({label, className, ...rest}:InputFieldType) => {
       </label>
       <input
         required
-        className={`${mode === "dark" ? "text-gray-300 border-primary/30" : "text-gray-700"} w-full border-2 p-[6px] focus:outline-primary rounded-md bg-transparent text-xs`}
+        className={`${mode === "dark" ? "text-gray-300 border-primary/30" : "text-gray-700"} w-full border-2 p-[8px] focus:outline-primary rounded-md bg-transparent text-xs`}
         {...rest}
       />
     </div>

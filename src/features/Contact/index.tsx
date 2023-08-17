@@ -10,8 +10,8 @@ const Contact = () => {
   const { mode } = useContext(ModeContext)
 
   return (
-    <Container className="pb-24 flex flex-col !gap-6">
-      <div className="h-36 lg:h-52 mt-4 w-full overflow-hidden flex items-center">
+    <Container className="pt-16 lg:pt-24 pb-24 flex flex-col !gap-6">
+      <div className="h-24 lg:h-44 mt-4 w-full overflow-hidden flex items-center">
         <img src={ContactImage} alt="contact image" />
       </div>
       <Typography variant="head" className='md:pb-5'>Get in touch</Typography>
@@ -34,7 +34,7 @@ const Contact = () => {
             />
           </div>
           <div className="block lg:hidden" />
-          <Button variant="blue" type="button">Send</Button>
+          <Button variant="blue" type="button" className='col-span-2 lg!py-4'>Send</Button>
         </form>
         <Container className="flex flex-col !px-0 h-full rounded-md">
           <div className="py-5 flex flex-col gap-5 px-5">

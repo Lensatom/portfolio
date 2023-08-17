@@ -9,8 +9,8 @@ import EducationImage from "../../assets/education.jpg"
 const Experience = () => {
   return (
     <>
-      <Container className="pb-10 flex flex-col !gap-6">
-        <div className="h-36 lg:h-52 mt-4 w-full overflow-hidden flex items-center">
+      <Container className="pt-16 lg:pt-24 pb-10 flex flex-col !gap-6">
+        <div className="h-24 lg:h-44 mt-4 w-full overflow-hidden flex items-center">
           <img src={ExperienceImage} alt="contact image" />
         </div>
         <Typography variant="head">Work Experience</Typography>
@@ -29,7 +29,7 @@ const Experience = () => {
         </div>
       </Container>
       <Container className="pb-24 flex flex-col !gap-8">
-        <div className="h-36 lg:h-52 mt-4 w-full overflow-hidden flex items-center">
+        <div className="h-36 lg:h-44 mt-4 w-full overflow-hidden flex items-center">
           <img src={EducationImage} alt="contact image" />
         </div>
         <Typography variant="head">Education</Typography>
