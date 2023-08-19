@@ -5,6 +5,7 @@ import LeisureImage from '../../assets/leisure.jpg'
 import ProspectsImage from '../../assets/prospects.jpg'
 import SkillsData from "./data/SkillsData.json"
 import Skill from "./components/Skill"
+import { NavLink } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -20,11 +21,15 @@ const Home = () => {
             using serverless technology such as Firebase. 
           </Typography>
           <div className="mt-5 flex gap-4">
-            <Button variant="blue" type="button" className="px-10">Projects</Button>
-            <Button variant="gray" type="button" className="flex items-center gap-2 font-normal">
-              View CV
-              <BsBoxArrowUpRight />
-            </Button>
+            <NavLink to="/projects">
+              <Button variant="blue" type="button" className="px-10">Projects</Button>
+            </NavLink>
+            <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>
+              <Button variant="gray" type="button" className="flex items-center gap-2 font-normal">
+                View CV
+                <BsBoxArrowUpRight />
+              </Button>
+            </a>
           </div>
           <div className="grid grid-cols-2 items-end gap-4 mt-4">
             <div className="col-span-2 flex flex-col">
@@ -34,13 +39,13 @@ const Home = () => {
             <div className="flex flex-col">
               <Typography variant="body" className="!font-bold">GitHub</Typography>
               <Typography variant="subbody" className="leading-tight w-[fit-content] hover:underline">
-                <a href="https://github.com/lensatom">https://github.com/lensatom</a>
+                <a href="https://github.com/lensatom" target="_blank">https://github.com/lensatom</a>
               </Typography>
             </div>
             <div className="flex flex-col">
               <Typography variant="body" className="!font-bold">Contact</Typography>
               <Typography variant="subbody" className="leading-tight w-[fit-content] hover:underline">
-                <a href="">atayerotommiwa@gmail.com</a>
+                <a href="mailto:atayerotommiwa@gmail.com" target="_blank">atayerotommiwa@gmail.com</a>
               </Typography>
             </div>
           </div>

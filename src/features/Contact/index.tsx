@@ -38,14 +38,23 @@ const Contact = () => {
         </form>
         <Container className="py-10 md:py-0 flex flex-col !px-0 h-full rounded-md">
           <div className="py-5 flex flex-col gap-5 px-5">
-            <Typography variant="subhead" className="!font-bold flex items-center gap-3">
-              <BsPinMap />
-              Lagos, Nigeria
-            </Typography>
+            <a href="https://www.google.com/maps/search/5,+Oyedeji,+Agbado+Ijaye,+lagos,+Nigeria/@6.6415442,3.2716378,13z/data=!3m1!4b1?entry=ttu" target="_blank">
+              <Typography variant="subhead" className="!font-bold flex items-center gap-3 hover:underline">
+                <BsPinMap />
+                Lagos, Nigeria
+              </Typography>
+            </a>
             <Line />
             <div className="flex flex-col gap-2">
-              <Typography variant="body">atayerotommiwa@gmail.com</Typography>
-              <Typography variant="subbody">+234-913-6852-885</Typography>
+              <Typography mode="dark" variant="body">
+                <a href="mailto:atayerotommiw@gmail.com" target="_blank" className='hover:underline'>atayerotommiwa@gmail.com</a>
+              </Typography>
+              <Typography mode="dark" variant="body" className='lg:hidden hover:underline'>
+                <a href="tel:+2349136852885" target="_blank">+234-913-6852-885</a>
+              </Typography>
+              <Typography mode="dark" variant="body" className='hidden lg:block'>
+                +234-913-6852-885
+              </Typography>
             </div>
           </div>
         </Container>

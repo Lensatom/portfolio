@@ -20,6 +20,15 @@ const Footer = () => {
           <FaCopyright />
           {new Date().getFullYear()}
         </Typography>
+        <Typography mode="dark" variant="body">
+          <a href="mailto:atayerotommiw@gmail.com" target="_blank">atayerotommiwa@gmail.com</a>
+        </Typography>
+        <Typography mode="dark" variant="body" className='lg:hidden'>
+          <a href="tel:+2349136852885" target="_blank">+234-913-6852-885</a>
+        </Typography>
+        <Typography mode="dark" variant="body" className='hidden lg:block'>
+          +234-913-6852-885
+        </Typography>
       </div>
       <div className='flex flex-col gap-3'>
         <Typography mode="dark" variant='subhead' className='!bold'>Pages</Typography>
@@ -47,35 +56,26 @@ const Footer = () => {
         <Typography mode="dark" variant='subhead' className='!bold'>Work contact</Typography>
         <div className='bg-gray-500 h-[1px] w-full' />
         <Typography mode="dark" variant="body">
-          <a href="/experience">Gmail</a>
+          <a href="https://wa.me/+2349079948491" target="_blank">WhatsApp</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/projects">WhatsApp</NavLink>
+          <a href="https://www.linkedin.com/in/lensatom" target="_blank">LinkedIn</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/blogs">LinkedIn</NavLink>
-        </Typography>
-        <Typography mode="dark" variant="body">
-          <NavLink to="/blogs">GitHub</NavLink>
+          <a href="https://github.com/lensatom" target="_blank">GitHub</a>
         </Typography>
       </div>
       <div className='flex flex-col gap-3'>
         <Typography mode="dark" variant='subhead' className='!bold'>Social life</Typography>
         <div className='bg-gray-500 h-[1px] w-full' />
         <Typography mode="dark" variant="body">
-          <NavLink to="/cv">X (Formerly Twitter)</NavLink>
+          <a href="https://twitter.com/Ayomide_Lens" target="_blank">X (Formerly Twitter)</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/cv">Thread</NavLink>
+          <a href="https://www.instagram.com/lensatom/" target="_blank">Instagram</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/cv">Instagram</NavLink>
-        </Typography>
-        <Typography mode="dark" variant="body">
-          <NavLink to="/cv">TikTok</NavLink>
-        </Typography>
-        <Typography mode="dark" variant="body">
-          <NavLink to="/cv">YouTube</NavLink>
+          <a href="https://www.tiktok.com/@lensatom" target="_blank">TikTok</a>
         </Typography>
       </div>
     </Container>

@@ -1,7 +1,7 @@
 import  { useContext, useEffect, useState } from 'react';
 import { NavLink, useLocation } from "react-router-dom";
 import { Button, Container, Typography } from "..";
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { ModeContext } from '../../context/ModeContext';
 import { BsMoon, BsSun } from 'react-icons/bs';
 import More from './components/More';
@@ -72,7 +72,10 @@ const Header = () => {
             }
           </Button>
           <Typography variant="subhead">
-            <FaBars className="text-xl" onClick={changeMoreStatus} />
+            { moreStatus === true ?
+              <FaTimes className="text-xl" onClick={changeMoreStatus} /> :
+              <FaBars className="text-xl" onClick={changeMoreStatus} />
+            }
           </Typography>
         </div>
       </Container>
