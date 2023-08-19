@@ -16,7 +16,7 @@ const Education = (props:EducationType) => {
       <Typography variant="subbody" className="opacity-80">{props.duration}</Typography>
       <Typography variant="subbody" className="mt-4">{props.description}</Typography>
       <Typography variant="subbody" className="mt-4 flex items-center gap-2 underline">
-        View CV
+        View resume
       </Typography>
     </div>
   )

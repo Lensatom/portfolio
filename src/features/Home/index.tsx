@@ -25,8 +25,8 @@ const Home = () => {
               <Button variant="blue" type="button" className="px-10">Projects</Button>
             </NavLink>
             <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>
-              <Button variant="gray" type="button" className="flex items-center gap-2 font-normal">
-                View CV
+              <Button variant="gray" type="button" className="flex items-center gap-2">
+                Resume
                 <BsBoxArrowUpRight />
               </Button>
             </a>
@@ -57,18 +57,26 @@ const Home = () => {
         <Line />
         <Typography variant="subhead" className="mt-5 md:mt-24">Some of my</Typography>
         <Typography variant="head">Stack Skills</Typography>
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 lg:items-center">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 lg:items-start">
           <img src={SkillsImage} alt="skills" className="rounded-lg" />
-          <div className="w-full grid grid-cols-2 gap-4">
-            {SkillsData.map((skill) => {
-              return (
-                <Skill
-                  skill={skill.skill}
-                  startYear={skill.startYear}
-                  description={skill.description}
-                />
-              )
-            })}
+          <div className="w-full flex flex-col gap-5">
+            <div className="w-full grid grid-cols-2 gap-4">
+              {SkillsData.map((skill) => {
+                return (
+                  <Skill
+                    skill={skill.skill}
+                    startYear={skill.startYear}
+                    description={skill.description}
+                  />
+                )
+              })}
+            </div>
+            <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>
+              <Button variant="gray" type="button" className="flex items-center gap-2">
+                View Resume
+                <BsBoxArrowUpRight />
+              </Button>
+            </a>
           </div>
         </div>
       </Container>
@@ -97,8 +105,8 @@ const Home = () => {
             <div className="flex flex-col gap-1 col-span-2">
               <Typography variant="subhead" className="!font-bold">Cycling</Typography>
               <Typography variant="body">
-                I love crusing on my bicycle to clear <br />
-                my head of stress
+                I enjoy cycling as a therapeutic way of <br />
+                easing stress and relaxing
               </Typography>
             </div>
           </div>
@@ -118,12 +126,12 @@ const Home = () => {
           <div className="w-full">
             <Typography variant="body" className="text-gray-300">
               Tech as a passion and means of making a living is a way for me to achieve my
-              life-long goal of making technology education available to enthusiats
+              life-long goal of making technology education available to enthusiasts
               especially in Africa. When I started tech, it was not too easy for me to plant my feet in it
               and I am aware this problem is still very much in the society. I am passionate 
               about creating innovations and avenues to solve it. To show my zeal, I have started by anchoring
               over 800 students in my school into tech with an online community, Bugger-Debuggers which I created to ease
-              the complexities of a tech course at my school.
+              the complexities of a tech course.
             </Typography>
           </div>
         </div>

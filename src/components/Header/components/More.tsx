@@ -26,7 +26,7 @@ const More = ({ closeMore }:any) => {
           <NavLink to='/contact'>Contact</NavLink>
         </Typography>
         <Typography variant="body" className='w-full py-1 text-center'>
-          <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>CV</a>
+          <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>Resume</a>
         </Typography>
       </nav>
     </div>

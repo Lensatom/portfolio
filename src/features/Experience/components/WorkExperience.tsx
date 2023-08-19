@@ -16,7 +16,7 @@ const WorkExperience = (props:WorkExperienceType) => {
       <Typography variant="subbody" className="opacity-80">{props.duration}</Typography>
       <Typography variant="subbody" className="mt-4">{props.description}</Typography>
       <Typography variant="subbody" className="mt-4 flex items-center gap-2 underline">
-        View CV
+      <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>View resume</a>
       </Typography>
     </div>
   )

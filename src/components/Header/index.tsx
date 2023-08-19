@@ -55,7 +55,7 @@ const Header = () => {
             <NavLink to='/contact'>Contact</NavLink>
           </Typography>
           <Typography variant="body">
-            <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>CV</a>
+            <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>Resume</a>
           </Typography>
           <Button type="button" variant="gray" onClick={changeMode} className='w-8 h-8 !p-0 !text-white !rounded-full flex justify-center items-center'>
             { mode === "dark" ?
