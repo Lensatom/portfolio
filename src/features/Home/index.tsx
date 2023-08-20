@@ -82,7 +82,7 @@ const Home = () => {
       </Container>
       <Container className="!pt-10 lg:!pt-28">
         <Line />
-        <div className="mt-2 md::mt-24 flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div className="mt-2 md:mt-16 flex flex-col-reverse lg:flex-row items-center justify-between">
           <div className="w-full lg:w-[40%] grid grid-cols-2 gap-2">
             <div className="mt-5 md:mt-0">
               <Typography variant="subhead">During my</Typography>
