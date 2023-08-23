@@ -2,13 +2,13 @@
   {
     "title": "React Project Returns 404 On Reload In Other Routes",
     "body": "Hi There! If you are reading this blog. You most likely have built a project in React with routing handled by React-Router and you have hosted it on either Netlify, Vercel or GitHub pages. However, you get a 404 when you reload on pages other than the homepage. This blog…",
-    "datePublished": "Just now",
+    "datePublished": "Aug. 23",
     "link": "https://medium.com/@ayomidetommiwa/react-project-returns-404-on-reload-in-other-routes-6e5cf419ad89?source=user_profile---------0----------------------------"
   },
   {
     "title": "Handling States (Better) In React Without Using Redux.",
     "body": "You will only seldomly need redux if you are good with React. What is state? State could mean diverse things in various fields. However, in React and frontend at large, state is simply data circulating in an application. This data sometimes dynamically determine the UI of a particular component or…",
-    "datePublished": "2 days ago",
+    "datePublished": "Aug. 21",
     "link": "https://medium.com/@ayomidetommiwa/handling-states-better-in-react-without-using-redux-7a11a27ac89b?source=user_profile---------1----------------------------"
   }
 ]

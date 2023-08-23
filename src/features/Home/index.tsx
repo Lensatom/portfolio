@@ -1,5 +1,6 @@
 import { BsBoxArrowUpRight } from "react-icons/bs"
 import { Button, Container, Line, Typography } from "../../components"
+import AyomideImage from '../../assets/ayomide.jpg'
 import SkillsImage from '../../assets/skills.jpg'
 import LeisureImage from '../../assets/leisure.jpg'
 import ProspectsImage from '../../assets/prospects.jpg'
@@ -51,6 +52,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full h-full flex items-center">
+          <img src={AyomideImage} alt="skills" className="rounded-lg" />
         </div>
       </Container>
       <Container className="flex flex-col items-start !gap-0">

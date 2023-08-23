@@ -17,7 +17,7 @@ const Contact = () => {
       <Typography variant="head" className='md:pb-5'>Get in touch</Typography>
       <Line />
       <div className="md:py-12 grid grid-cols-1 lg:grid-cols-2 pt-5 gap-12 items-center">
-        <form className="grid grid-cols-2 gap-x-4 gap-y-5">
+        <form className="hidden grid-cols-2 gap-x-4 gap-y-5">
           <InputField label="Full name" className="col-span-2 lg:col-span-1" />
           <InputField type="email" label="Email Address" className="col-span-2 lg:col-span-1" />
           <InputField label="Subject" className="col-span-2" />
@@ -36,7 +36,7 @@ const Contact = () => {
           <div className="hidden" />
           <Button variant="blue" type="button" className='col-span-2 py-4'>Send</Button>
         </form>
-        <Container className="py-10 md:py-0 flex flex-col !px-0 h-full rounded-md">
+        <Container className="py-24 flex flex-col !px-0 h-full rounded-md">
           <div className="py-5 flex flex-col gap-5 px-5">
             <a href="https://www.google.com/maps/search/5,+Oyedeji,+Agbado+Ijaye,+lagos,+Nigeria/@6.6415442,3.2716378,13z/data=!3m1!4b1?entry=ttu" target="_blank">
               <Typography variant="subhead" className="!font-bold flex items-center gap-3 hover:underline">
