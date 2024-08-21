@@ -25,7 +25,7 @@ const Home = () => {
             <NavLink to="/projects">
               <Button variant="blue" type="button" className="px-10">Projects</Button>
             </NavLink>
-            <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>
+            <a href='https://drive.google.com/file/d/1tBa6fMKFoX-uPhqzh-NSqR8SBl2zWDHe/view?usp=drive_link' target='_blank'>
               <Button variant="gray" type="button" className="flex items-center gap-2">
                 Resume
                 <BsBoxArrowUpRight />
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-2 items-end gap-4 mt-4">
             <div className="col-span-2 flex flex-col">
-              <Typography variant="body" className="!font-bold">3+</Typography>
+              <Typography variant="body" className="!font-bold">4+</Typography>
               <Typography variant="subbody">Years of <br className="hidden lg:block" /> experience</Typography>
             </div>
             <div className="flex flex-col">

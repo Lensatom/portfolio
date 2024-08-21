@@ -49,7 +49,7 @@ const Footer = () => {
           <NavLink to="/contact">Contact</NavLink>
         </Typography>
         <Typography mode="dark" variant="body">
-          <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>Resume</a>
+          <a href='https://drive.google.com/file/d/1tBa6fMKFoX-uPhqzh-NSqR8SBl2zWDHe/view?usp=drive_link' target='_blank'>Resume</a>
         </Typography>
       </div>
       <div className='flex flex-col gap-3'>
