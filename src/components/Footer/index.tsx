@@ -56,7 +56,7 @@ const Footer = () => {
         <Typography mode="dark" variant='subhead' className='!bold'>Work contact</Typography>
         <div className='bg-gray-500 h-[1px] w-full' />
         <Typography mode="dark" variant="body">
-          <a href="https://wa.me/+2349079948491" target="_blank">WhatsApp</a>
+          <a href="https://wa.me/+2349136852885" target="_blank">WhatsApp</a>
         </Typography>
         <Typography mode="dark" variant="body">
           <a href="https://www.linkedin.com/in/lensatom" target="_blank">LinkedIn</a>

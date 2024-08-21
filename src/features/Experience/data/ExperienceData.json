@@ -1,5 +1,17 @@
 [
   {
+    "company": "Techvant",
+    "duration": "May. 2024 - Present",
+    "position": "Frontend Developer",
+    "description": "Work on various project the company has been contracted on for development."
+  },
+  {
+    "company": "ShareIT",
+    "duration": "Oct. 2023 - Jun. 2024",
+    "position": "Frontend Developer",
+    "description": "Worked on the company's web application, mobile application and admin dashboard."
+  },
+  {
     "company": "Autogon AI",
     "duration": "Feb. 2023 - Jun. 2023",
     "position": "Frontend Developer",

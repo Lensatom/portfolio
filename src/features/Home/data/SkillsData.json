@@ -5,14 +5,9 @@
     "description": "A descriptive language I use in marking up websites"
   },
   {
-    "skill": "JavaScript",
+    "skill": "JavaScript & Typescipt",
     "startYear": 2019,
-    "description": "I use JavaScript to build interactive and dynamic sites"
-  },
-  {
-    "skill": "TypeScript",
-    "startYear": 2022,
-    "description": "To write safer and typed JavaScript programs"
+    "description": "To build interactive and dynamic sites with type-safe developemnt experience"
   },
   {
     "skill": "React",
@@ -20,14 +15,19 @@
     "description": "A frontend library I use in creating one-paged web applications"
   },
   {
-    "skill": "Tailwind",
+    "skill": "Expo",
     "startYear": 2020,
-    "description": "A CSS framework I use in styling features and components"
+    "description": "For cross-platform mobile applications. I style native applications using Tamagui"
   },
   {
-    "skill": "Redux",
+    "skill": "Tailwind",
+    "startYear": 2020,
+    "description": "A CSS framework I use in styling features and components in React"
+  },
+  {
+    "skill": "Redux & Zustand",
     "startYear": 2022,
-    "description": "I use Redux to handle complex states in my React applications"
+    "description": "To handle complex data states in React applications"
   },
   {
     "skill": "Jest",
