@@ -1,7 +1,25 @@
 [
   {
+    "company": "Pavilion Security",
+    "duration": "May. 2025 - Present",
+    "position": "Software Engineer",
+    "description": "Built a crome extension to interact with user emails and ensure mail security."
+  },
+  {
+    "company": "TankUp",
+    "duration": "Nov. 2024 - Present",
+    "position": "Mobile App Developer",
+    "description": "Built a mobile application to help users locate fuel, CNGS and repair services."
+  },
+  {
+    "company": "Data Fellows",
+    "duration": "April. 2025 - June. 2025",
+    "position": "Fullstack Developer",
+    "description": "Contract gig. Worked on the company's internal dashboard and client portal."
+  },
+  {
     "company": "Techvant",
-    "duration": "May. 2024 - Present",
+    "duration": "May. 2024 - March. 2025",
     "position": "Frontend Developer",
     "description": "Work on various project the company has been contracted on for development."
   },

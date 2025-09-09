@@ -1,42 +1,42 @@
 [
   {
-    "skill": "HTML & CSS",
+    "skill": "HTML/CSS",
     "startYear": 2018,
     "description": "A descriptive language I use in marking up websites"
   },
   {
-    "skill": "JavaScript & Typescipt",
+    "skill": "JavaScript/Typescipt",
     "startYear": 2019,
     "description": "To build interactive and dynamic sites with type-safe developemnt experience"
   },
   {
-    "skill": "React",
+    "skill": "Next/React",
     "startYear": 2020,
     "description": "A frontend library I use in creating one-paged web applications"
   },
   {
-    "skill": "Expo",
+    "skill": "Expo/React Native",
     "startYear": 2020,
     "description": "For cross-platform mobile applications. I style native applications using Tamagui"
   },
   {
-    "skill": "Tailwind",
+    "skill": "Tailwind/TamaGUI",
     "startYear": 2020,
     "description": "A CSS framework I use in styling features and components in React"
   },
   {
-    "skill": "Redux & Zustand",
+    "skill": "Redux/Zustand",
     "startYear": 2022,
     "description": "To handle complex data states in React applications"
   },
   {
-    "skill": "Jest",
+    "skill": "Node/Express",
     "startYear": 2022,
-    "description": "In conjection with React Test Library for automated tests"
+    "description": "To build scalable backend services and RESTful APIs."
   },
   {
     "skill": "Git",
     "startYear": 2020,
-    "description": "For code hosting, version control and collaboration"
+    "description": "For version control and collaboration"
   }
 ]

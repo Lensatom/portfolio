@@ -15,11 +15,10 @@ const Home = () => {
         <div className="w-full flex flex-col items-center md:items-start text-center md:text-left">
           <Typography variant="subhead">Hi, I'm</Typography>
           <Typography variant="head">Ayomide Atayero,</Typography>
-          <Typography variant="subhead" className="mt-1">A Frontend Engineer</Typography>
-          <Typography variant="body" className="mt-2">
-            I engineer client-side web applications to ensure optimum user experience
-            as well as speed and intended functionalities. I also build fullstack applications
-            using serverless technology such as Firebase. 
+          <Typography variant="subhead" className="mt-1">A Fullstack Software Engineer</Typography>
+          <Typography variant="body" className="mt-2 lg:pr-32">
+            I engineer web and mobile applications to solve problems.
+            I build solutions using modern technologies like React, Next, React Native, Node, and more.
           </Typography>
           <div className="mt-5 flex gap-4">
             <NavLink to="/projects">
