@@ -24,7 +24,7 @@ const Home = () => {
             <NavLink to="/projects">
               <Button variant="blue" type="button" className="px-10">Projects</Button>
             </NavLink>
-            <a href='https://drive.google.com/file/d/1tBa6fMKFoX-uPhqzh-NSqR8SBl2zWDHe/view?usp=drive_link' target='_blank'>
+            <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>
               <Button variant="gray" type="button" className="flex items-center gap-2">
                 Resume
                 <BsBoxArrowUpRight />
@@ -72,7 +72,7 @@ const Home = () => {
                 )
               })}
             </div>
-            <a href='https://drive.google.com/file/d/1ZaPWYHX4tH7JOXbouXCAlEEoqp0vM615/view?usp=sharing' target='_blank'>
+            <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>
               <Button variant="gray" type="button" className="flex items-center gap-2">
                 View Resume
                 <BsBoxArrowUpRight />
