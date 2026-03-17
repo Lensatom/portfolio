@@ -1,16 +1,10 @@
-import { Container, Line, Typography } from "../../components"
-import WorkExperience from "./components/WorkExperience"
-import ExperienceData from "./data/ExperienceData.json"
-import ExperienceImage from "../../assets/experience.jpg"
-import EducationImage from "../../assets/education.jpg"
+import { Container, Line, Typography } from "../../../components"
+import WorkExperience from "../../Experience/components/WorkExperience"
+import ExperienceData from "../../Experience/data/ExperienceData.json"
 
-const Experience = () => {
+function WorkExperienceSection() {
   return (
-    <>
-      <Container className="pt-16 lg:pt-24 pb-10 flex flex-col !gap-6">
-        <div className="h-24 lg:h-44 mt-4 w-full overflow-hidden flex items-center">
-          <img src={ExperienceImage} alt="contact image" />
-        </div>
+    <Container className="pt-16 lg:pt-24 pb-10 flex flex-col !gap-6">
         <Typography variant="head">Work Experience</Typography>
         <Line />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -32,8 +26,7 @@ const Experience = () => {
           })}
         </div>
       </Container>
-    </>
   )
 }
 
-export default Experience
+export default WorkExperienceSection

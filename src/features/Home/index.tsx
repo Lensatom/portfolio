@@ -1,86 +1,14 @@
-import { BsBoxArrowUpRight } from "react-icons/bs"
-import { Button, Container, Line, Typography } from "../../components"
-import AyomideImage from '../../assets/ayomide.jpg'
-import SkillsImage from '../../assets/skills.jpg'
 import LeisureImage from '../../assets/leisure.jpg'
 import ProspectsImage from '../../assets/prospects.jpg'
-import SkillsData from "./data/SkillsData.json"
-import Skill from "./components/Skill"
-import { NavLink } from "react-router-dom"
+import { Container, Line, Typography } from "../../components"
+import { Hero, WorkExperienceSection } from "./partials"
 
 const Home = () => {
   return (
     <>
-      <Container className="lg:h-screen !pt-16 py-10 lg:py-0 flex md:flex-row flex-col-reverse items-center justify-between">
-        <div className="w-full flex flex-col items-center md:items-start text-center md:text-left">
-          <Typography variant="subhead">Hi, I'm</Typography>
-          <Typography variant="head">Ayomide Atayero,</Typography>
-          <Typography variant="subhead" className="mt-1">A Fullstack Software Engineer</Typography>
-          <Typography variant="body" className="mt-2 lg:pr-32">
-            I engineer web and mobile applications to solve problems.
-            I build solutions using modern technologies like React, Next, React Native, Node, and more.
-          </Typography>
-          <div className="mt-5 flex gap-4">
-            <NavLink to="/projects">
-              <Button variant="blue" type="button" className="px-10">Projects</Button>
-            </NavLink>
-            <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>
-              <Button variant="gray" type="button" className="flex items-center gap-2">
-                Resume
-                <BsBoxArrowUpRight />
-              </Button>
-            </a>
-          </div>
-          <div className="grid grid-cols-2 items-end gap-4 mt-4">
-            <div className="col-span-2 flex flex-col">
-              <Typography variant="body" className="!font-bold">4+</Typography>
-              <Typography variant="subbody">Years of <br className="hidden lg:block" /> experience</Typography>
-            </div>
-            <div className="flex flex-col">
-              <Typography variant="body" className="!font-bold">GitHub</Typography>
-              <Typography variant="subbody" className="leading-tight w-[fit-content] hover:underline">
-                <a href="https://github.com/lensatom" target="_blank">https://github.com/lensatom</a>
-              </Typography>
-            </div>
-            <div className="flex flex-col">
-              <Typography variant="body" className="!font-bold">Contact</Typography>
-              <Typography variant="subbody" className="leading-tight w-[fit-content] hover:underline">
-                <a href="mailto:atayerotommiwa@gmail.com" target="_blank">atayerotommiwa@gmail.com</a>
-              </Typography>
-            </div>
-          </div>
-        </div>
-        <div className="w-full h-full flex items-center">
-          <img src={AyomideImage} alt="skills" className="rounded-lg" />
-        </div>
-      </Container>
-      <Container className="flex flex-col items-start !gap-0">
-        <Line />
-        <Typography variant="subhead" className="mt-5 md:mt-24">Some of my</Typography>
-        <Typography variant="head">Stack Skills</Typography>
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 lg:items-start">
-          <img src={SkillsImage} alt="skills" className="rounded-lg" />
-          <div className="w-full flex flex-col gap-5">
-            <div className="w-full grid grid-cols-2 gap-4">
-              {SkillsData.map((skill) => {
-                return (
-                  <Skill
-                    skill={skill.skill}
-                    startYear={skill.startYear}
-                    description={skill.description}
-                  />
-                )
-              })}
-            </div>
-            <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>
-              <Button variant="gray" type="button" className="flex items-center gap-2">
-                View Resume
-                <BsBoxArrowUpRight />
-              </Button>
-            </a>
-          </div>
-        </div>
-      </Container>
+      <Hero />
+      <WorkExperienceSection />
+
       <Container className="!pt-10 lg:!pt-28">
         <Line />
         <div className="mt-2 md:mt-16 flex flex-col-reverse lg:flex-row items-center justify-between">
@@ -116,6 +44,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+
       <Container className="py-10 lg:py-28 flex flex-col !gap-8 items-center justify-between">
         <Line />
         <div className="mt-2 lg:mt-16 w-full">

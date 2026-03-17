@@ -1,56 +1,116 @@
 [
   {
-    "company": "Pavilion Security",
-    "duration": "May. 2025 - Present",
+    "company": "Hanaja",
+    "duration": "November 2025 - Present",
+    "position": "Mobile Application Engineer",
+    "location": "Minnesota, USA",
+    "description": "Hanaja is a service marketplace that connects people who need reliable help with trusted helpers in their area.",
+    "technologies": ["React Native", "TamaGUI", "TypeScript", "Expo", "Playwright"],
+    "highlights": [
+      "Conducted a technical audit and advised leadership on a rebuild to resolve systemic issues, achieving a more scalable application with a well-structured API design pattern and file-based navigation.",
+      "Led the redesign and implementation of the application using TypeScript, Expo, and TamaGUI.",
+      "Applied secure development practices and scalable design patterns, with automated end-to-end testing using Playwright to ensure reliability and prevent regressions."
+    ],
+    "logoURL": "",
+    "link": ""
+  },
+  {
+    "company": "NaijaShop",
+    "duration": "June 2025 - February 2026",
+    "position": "Frontend Engineer (Contract)",
+    "location": "Abuja, Nigeria",
+    "description": "NaijaShop is a grocery shopping and delivery platform that connects customers, riders, and vendors in one ecosystem.",
+    "technologies": ["NextJS", "ReactJS", "React Native", "TypeScript", "Tailwind", "TamaGUI", "Expo"],
+    "highlights": [
+      "Owned development of the customer and rider mobile apps, plus vendor and internal operations dashboards, building core interfaces across mobile and web.",
+      "Instrumented event tracking with Mixpanel and error monitoring with Sentry, and led build, signing, and deployment pipelines to the App Store and Google Play Store."
+    ],
+    "logoURL": "",
+    "link": ""
+  },
+  {
+    "company": "GalaxyFi",
+    "duration": "October 2024 - January 2026",
+    "position": "Frontend Developer (Contract)",
+    "location": "Lagos, Nigeria",
+    "description": "GalaxyFi is a fintech platform that combines traditional fiat services with Web3-enabled financial experiences.",
+    "technologies": ["ReactJS", "TypeScript", "React Native", "TamaGUI", "Expo"],
+    "highlights": [
+      "Implemented secure application architecture and best practices, strengthening authentication flows, data protection mechanisms, and secure API communication.",
+      "Designed and developed admin dashboard modules to enable internal monitoring and streamline administrative workflows."
+    ],
+    "logoURL": "",
+    "link": ""
+  },
+  {
+    "company": "Squad (GTCO)",
+    "duration": "September 2024 - September 2025",
     "position": "Software Engineer",
-    "description": "Built a crome extension to interact with user emails and ensure mail security."
-  },
-  {
-    "company": "TankUp",
-    "duration": "Nov. 2024 - Present",
-    "position": "Mobile App Developer",
-    "description": "Built a mobile application to help users locate fuel, CNGS and repair services."
-  },
-  {
-    "company": "Data Fellows",
-    "duration": "April. 2025 - June. 2025",
-    "position": "Fullstack Developer",
-    "description": "Contract gig. Worked on the company's internal dashboard and client portal."
-  },
-  {
-    "company": "Techvant",
-    "duration": "May. 2024 - March. 2025",
-    "position": "Frontend Developer",
-    "description": "Work on various project the company has been contracted on for development."
-  },
-  {
-    "company": "ShareIT",
-    "duration": "Oct. 2023 - Jun. 2024",
-    "position": "Frontend Developer",
-    "description": "Worked on the company's web application, mobile application and admin dashboard."
-  },
-  {
-    "company": "Autogon AI",
-    "duration": "Feb. 2023 - Jun. 2023",
-    "position": "Frontend Developer",
-    "description": "I worked here as a developer in the company's landing page as well as the product portal"
+    "location": "Lagos, Nigeria",
+    "description": "Squad by GTCO is a fintech solution that helps SMEs handle digital payments and commerce operations more efficiently.",
+    "technologies": ["NextJS", "ReactJS", "NodeJS", "ExpressJS", "AWS", "Postgres", "TypeScript"],
+    "highlights": [
+      "Built a vendor directory app for GTCO Fashion Week, helping over 700,000 fashion enthusiasts navigate the event.",
+      "Improved cross-breakpoint responsiveness and optimized SVG rendering, while offloading static assets to a CDN for faster global delivery and smoother visual performance."
+    ],
+    "logoURL": "",
+    "link": "https://squadco.com/"
   },
   {
     "company": "Nester Verify",
-    "duration": "Aug. 2022 - Mar. 2023",
-    "position": "Frontend Developer",
-    "description": "Created features as assigned by the product manager. Accountable to a team lead."
+    "duration": "August 2022 - April 2025",
+    "position": "Frontend Engineer",
+    "location": "Lagos, Nigeria",
+    "description": "Nester Verify is a real-time KYC verification platform that helps businesses validate customer identity and compliance quickly.",
+    "technologies": ["ReactJS", "Tailwind", "TypeScript", "Jest", "GitHub Actions"],
+    "highlights": [
+      "Contributed to a microfrontend architecture, building pixel-perfect, accessible components and integrating backend services via typed REST and GraphQL clients.",
+      "Automated CI/CD pipelines with GitHub Actions, including build optimization, test gating, and deployment workflows for faster, safer releases."
+    ],
+    "logoURL": "",
+    "link": "https://www.nesterverify.com/"
   },
   {
-    "company": "High-Q Innovations",
-    "duration": "Mar. 2022 - Sept. 2022",
-    "position": "Frontend Developer",
-    "description": "Worked on various and diverse projects different clients contract with the company."
+    "company": "Data Fellows",
+    "duration": "April 2025 - June 2025",
+    "position": "Software Engineer (Contract)",
+    "location": "Abuja, Nigeria",
+    "description": "Data Fellows is a talent and collaboration hub that connects AI engineers with organizations seeking specialized expertise.",
+    "technologies": ["NextJS", "Tailwind", "TypeScript", "NodeJS", "ExpressJS", "MongoDB", "OpenAI"],
+    "highlights": [
+      "Developed a role-based portal for data engineers and potential hirers, handling complex state management efficiently.",
+      "Built full-stack features with authentication, role-based access, secure payment, and OpenAI-powered matchmaking."
+    ],
+    "logoURL": "",
+    "link": "http://datafellowsai.com"
   },
   {
-    "company": "OTS ICT Learning Center",
-    "duration": "Aug. 2020 - Aug. 2022",
-    "position": "Programming Facilitator",
-    "description": "Taught numerous students programming and frontend technologies. I also assign tasks accordingly."
+    "company": "Autogon AI",
+    "duration": "February 2023 - May 2025",
+    "position": "Software Engineer",
+    "location": "Texas, USA",
+    "description": "Autogon AI is a drag-and-drop AI platform for designing, testing, and deploying intelligent workflows with less complexity.",
+    "technologies": ["NextJS", "ReactJS", "TypeScript", "Firebase", "Redis"],
+    "highlights": [
+      "Integrated RESTful APIs across systems, implementing caching strategies to improve performance and reduce redundant network requests.",
+      "Owned and developed products including Medgnosis and Agrointel, driving end-to-end frontend and backend feature delivery.",
+      "Improved organic search performance by applying technical SEO standards on the company website."
+    ],
+    "logoURL": "",
+    "link": "https://autogon.ai/"
+  },
+  {
+    "company": "TankUp",
+    "duration": "November 2024 - May 2025",
+    "position": "Frontend Engineer (Contract)",
+    "location": "Abuja, Nigeria",
+    "description": "TankUp is a mobility-focused platform that helps motorists find fuel stations, compare prices, and make better route decisions in real time.",
+    "technologies": ["React Native", "TypeScript", "Expo"],
+    "highlights": [
+      "Developed fuel station and price tracking apps with real-time location sync via Google Maps, guiding motorists to fuel, gas, and CNG stations.",
+      "Owned mobile app and admin dashboard development and deployment to Apple App Store and Google Play Store."
+    ],
+    "logoURL": "",
+    "link": ""
   }
 ]

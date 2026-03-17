@@ -1,53 +1,70 @@
 import { useEffect, useState } from 'react';
-import { Route, Routes, useLocation } from "react-router-dom"
-import { Footer, Header, Line } from "./components"
-import { Blogs, Contact, Experience, Home, Projects } from "./features"
+import { Route, Routes, useLocation } from "react-router-dom";
+import { Footer, Header, Line } from "./components";
 import { ModeContext } from './context/ModeContext';
-import Loader from './components/Loader';
+import { Blogs, Contact, Experience, Home, Projects } from "./features";
 
 function App() {
 
-  const currentMode = localStorage.getItem("mode");
+  const currentMode = localStorage.getItem("mode") ?? "light";
   const { pathname } = useLocation();
   const [mode, setMode] = useState("dark");
-  const [loaded, setLoaded] = useState(false)
+  const [showHeader, setShowHeader] = useState(true);
   
   useEffect(() => {
-    if (currentMode === "light") {
-      setMode("light")
-    }
+    setMode(currentMode)
     window.scrollTo(0, 0)
-    setTimeout(() => {
-      setLoaded(true)
-    }, 2000)
   }, [pathname])
 
-  if (loaded) {
-    return (
-      <ModeContext.Provider value={{mode, setMode}}>
-        <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"}`}>
-          <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} z-[99] w-full fixed`}>
-            <Header />
-            <Line />
-          </div>
-          <div>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
-          <div className='bg-[#121212]'>
-            <Footer />
-          </div>
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleHeaderVisibility = () => {
+      const currentScrollY = window.scrollY;
+      const hasMeaningfulScroll = Math.abs(currentScrollY - lastScrollY) > 8;
+
+      if (!hasMeaningfulScroll) return;
+
+      if (currentScrollY <= 10) {
+        setShowHeader(true);
+      } else {
+        setShowHeader(currentScrollY < lastScrollY);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleHeaderVisibility, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleHeaderVisibility);
+    };
+  }, []);
+
+  return (
+    <ModeContext.Provider value={{mode, setMode}}>
+      <div className={`${mode === "dark" ? "bg-[hsl(200,30%,12%)]" : "bg-gray-50"}`}>
+        <div
+          className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} z-[99] w-full fixed transition-transform duration-300 ease-out ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
+        >
+          <Header />
+          <Line />
         </div>
-      </ModeContext.Provider>
-    )
-  } else {
-    return <Loader />
-  }
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <div className='bg-[#121212]'>
+          <Footer />
+        </div>
+      </div>
+    </ModeContext.Provider>
+  )
 }
 
 export default App

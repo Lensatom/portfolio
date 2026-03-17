@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
       {moreStatus && <More closeMore={() => {setMoreStatus(false)}} />}
-      <Container className="w-full py-5 md:py-6 bg-primary/10 backdrop-blur-sm flex items-center justify-between">
+      <Container className="w-full py-5 md:py-6 backdrop-blur-sm flex items-center justify-between">
         <Typography variant="subhead" className='flex gap-1 items-baseline'>
           Ayomide
           <div className='w-1 h-1 bg-red-500 font-bold rounded-full'></div>
@@ -57,12 +57,12 @@ const Header = () => {
           <Typography variant="body">
             <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>Resume</a>
           </Typography>
-          <Button type="button" variant="gray" onClick={changeMode} className='w-8 h-8 !p-0 !text-white !rounded-full flex justify-center items-center'>
+          {/* <Button type="button" variant="gray" onClick={changeMode} className='w-8 h-8 !p-0 !text-white !rounded-full flex justify-center items-center'>
             { mode === "dark" ?
               <BsSun className="text-md" /> :
               <BsMoon className="text-xs" />
             }
-          </Button>
+          </Button> */}
         </nav>
         <div className='flex lg:hidden items-center gap-5 text-sm text-slate-200'>
           <Button type="button" variant="gray" onClick={changeMode} className='w-8 h-8 !p-0 !text-white !rounded-full flex justify-center items-center'>
