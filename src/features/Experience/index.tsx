@@ -1,8 +1,7 @@
+import ExperienceImage from "../../assets/experience.jpg"
 import { Container, Line, Typography } from "../../components"
 import WorkExperience from "./components/WorkExperience"
 import ExperienceData from "./data/ExperienceData.json"
-import ExperienceImage from "../../assets/experience.jpg"
-import EducationImage from "../../assets/education.jpg"
 
 const Experience = () => {
   return (

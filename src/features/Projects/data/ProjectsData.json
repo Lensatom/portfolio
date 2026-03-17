@@ -2,18 +2,50 @@
   {
     "name": "Uclid",
     "niche": "Education",
-    "description": "A math game aimed at helping students perform simple arithemetic problems faster without the need of a calculator.",
-    "link": "https://uclid.vercel.app"
+    "description": "A math game aimed at helping students perform simple arithmetic problems faster without the need of a calculator.",
+    "link": "https://uclid.vercel.app",
+    "color": "#7C3AED"
   },
   {
     "name": "Smokie",
     "niche": "E-commerce",
     "description": "A fashion site built for buying and selling of products dynamically populated with an admin dashboard. I also built the admin dashboard.",
-    "link": "https://smokie.vercel.app"
+    "link": "https://smokie.vercel.app",
+    "color": "#E11D48"
   },
   {
     "name": "Ayomide",
     "niche": "Portfolio",
-    "description": "This very site you're on right now is my portfolio website built completely by me. It contains my career journey so far as well as my prospects."
+    "description": "This very site you're on right now is my portfolio website built completely by me. It contains my career journey so far as well as my prospects.",
+    "link": "",
+    "color": "#0891B2"
+  },
+  {
+    "name": "EchoRank",
+    "niche": "AI",
+    "description": "A clone of the popular ChatGPT application built with NextJS and Tailwind CSS. It features a responsive design and a user-friendly interface.",
+    "link": "https://chatgpt-clone-phi.vercel.app",
+    "color": "#10B981"
+  },
+  {
+    "name": "Microwd",
+    "niche": "UI Library",
+    "description": "A React Native UI library built with TypeScript and Tailwind CSS, designed to provide a consistent and customizable set of components for mobile app development.",
+    "link": "https://tamaui.com",
+    "color": "#7F1DFF"
+  },
+  {
+    "name": "Signan",
+    "niche": "Blog",
+    "description": "A personal blog built with NextJS and Tailwind CSS, where I share my thoughts on software development, technology trends, and career advice.",
+    "link": "https://ayomide-blog.vercel.app",
+    "color": "#F59E0B"
+  },
+  {
+    "name": "Sync",
+    "niche": "Utility",
+    "description": "A simple weather application built with ReactJS and OpenWeatherMap API, allowing users to check the current weather and forecast for any location.",
+    "link": "https://weather-app-ayomide.vercel.app",
+    "color": "#3B82F6"
   }
 ]
