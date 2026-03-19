@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <Container className='relative overflow-hidden bg-gray-700 grid grid-cols-2 lg:grid-cols-4 !gap-10 py-10 lg:py-24 lg:pb-44'>
+    <Container className='relative overflow-hidden !bg-gray-700 grid grid-cols-2 lg:grid-cols-4 !gap-10 py-10 lg:py-24 lg:pb-44'>
       <div className='flex flex-col gap-3 z-10'>
         <div className='flex items-baseline gap-1'>
           <Typography mode="dark" variant='subhead' className='!bold flex'>
@@ -79,7 +79,6 @@ const Footer = () => {
         </Typography>
       </div>
       <span className='absolute -bottom-24 -right-[40%] text-[300px] font-extrabold text-transparent' style={{WebkitTextStroke: '2px rgba(255, 255, 255, 0.04)'}}>AYOMIDE</span>
-      <span className='absolute -bottom-24 -left-[60%] text-[300px] font-extrabold text-transparent' style={{WebkitTextStroke: '2px rgba(255, 255, 255, 0.04)'}}>AYOMIDE</span>
     </Container>
   )
 }

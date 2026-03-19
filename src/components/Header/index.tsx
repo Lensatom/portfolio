@@ -1,30 +1,17 @@
-import  { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink, useLocation } from "react-router-dom";
-import { Button, Container, Typography } from "..";
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { ModeContext } from '../../context/ModeContext';
-import { BsMoon, BsSun } from 'react-icons/bs';
+import { Container, Typography } from "..";
 import More from './components/More';
 
 const Header = () => {
   
   const { pathname } = useLocation()
-  const { mode, setMode } = useContext(ModeContext);
   const [ moreStatus, setMoreStatus ] = useState(false);
 
   useEffect(() => {
     setMoreStatus(false);
   }, [pathname])
-
-  const changeMode = () => {
-    if (mode === "light") {
-      localStorage.setItem("mode", "dark")
-      setMode("dark");
-    } else {
-      localStorage.setItem("mode", "light")
-      setMode("light");
-    }
-  }
 
   const changeMoreStatus = () => {
     setMoreStatus(!moreStatus)
@@ -57,20 +44,8 @@ const Header = () => {
           <Typography variant="body">
             <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>Resume</a>
           </Typography>
-          {/* <Button type="button" variant="gray" onClick={changeMode} className='w-8 h-8 !p-0 !text-white !rounded-full flex justify-center items-center'>
-            { mode === "dark" ?
-              <BsSun className="text-md" /> :
-              <BsMoon className="text-xs" />
-            }
-          </Button> */}
         </nav>
         <div className='flex lg:hidden items-center gap-5 text-sm text-slate-200'>
-          <Button type="button" variant="gray" onClick={changeMode} className='w-8 h-8 !p-0 !text-white !rounded-full flex justify-center items-center'>
-            { mode === "dark" ?
-              <BsSun className="text-md" /> :
-              <BsMoon className="text-xs" />
-            }
-          </Button>
           <Typography variant="subhead">
             { moreStatus === true ?
               <FaTimes className="text-xl" onClick={changeMoreStatus} /> :
