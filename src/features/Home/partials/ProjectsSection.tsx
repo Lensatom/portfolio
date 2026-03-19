@@ -40,7 +40,7 @@ export function ProjectsSection() {
       <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 20% 80%, white 1px, transparent 1px), radial-gradient(circle at 80% 20%, white 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
       <div className="absolute top-4 left-0 right-0 px-4 sm:px-6 lg:top-8 lg:px-10 flex justify-between items-center text-white/50 text-[10px] sm:text-xs lg:text-sm font-mono tracking-widest">
-        <Typography variant="subhead" className='text-white'>Personal Projects</Typography>
+        <Typography variant="head" className='text-white !text-md'>Personal Projects</Typography>
         {String(projectCurrent + 1).padStart(2, "0")} / {String(ProjectsData.length).padStart(2, "0")}
       </div>
 
@@ -67,7 +67,7 @@ export function ProjectsSection() {
             View Project <BsBoxArrowUpRight size={12} />
           </button>
         ) : (
-          <span className="inline-flex items-center px-6 lg:px-8 py-2 lg:py-3 bg-white/20 text-white/60 text-xs lg:text-sm font-semibold rounded-full backdrop-blur-sm italic">
+          <span className="inline-flex items-center px-6 lg:px-8 py-2 lg:py-3 bg-white/20 text-white/60 text-xs lg:text-sm font-semibold rounded-full backdrop-blur-sm">
             Coming soon
           </span>
         )}

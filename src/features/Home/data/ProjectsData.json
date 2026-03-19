@@ -1,10 +1,24 @@
 [
   {
-    "name": "Uclid",
-    "niche": "Education",
-    "description": "A math game aimed at helping students perform simple arithmetic problems faster without the need of a calculator.",
-    "link": "https://uclid.vercel.app",
+    "name": "EchoRank",
+    "niche": "Voting",
+    "description": "A polling application that lets users rank options in order of preference, with results determined using the instant runoff voting (IRV) method to ensure a majority winner.",
+    "link": "",
     "color": "#7C3AED"
+  },
+  {
+    "name": "Microwd",
+    "niche": "Events",
+    "description": "Simplifying attendance tracking with dynamic QR codes that refresh every few seconds, preventing reuse and ensuring secure, real-time verification.",
+    "link": "https://microwd-webapp.vercel.app/",
+    "color": "#0891B2"
+  },
+  {
+    "name": "Uclid",
+    "niche": "Game",
+    "description": "A timed fast-paced math game where players race to solve simple arithmetic problems, featuring real-time multiplayer so users can compete head-to-head.",
+    "link": "https://uclid.vercel.app",
+    "color": "#10B981"
   },
   {
     "name": "Smokie",
@@ -14,38 +28,17 @@
     "color": "#E11D48"
   },
   {
-    "name": "Ayomide",
-    "niche": "Portfolio",
-    "description": "This very site you're on right now is my portfolio website built completely by me. It contains my career journey so far as well as my prospects.",
-    "link": "",
-    "color": "#0891B2"
-  },
-  {
-    "name": "EchoRank",
-    "niche": "AI",
-    "description": "A clone of the popular ChatGPT application built with NextJS and Tailwind CSS. It features a responsive design and a user-friendly interface.",
-    "link": "https://chatgpt-clone-phi.vercel.app",
-    "color": "#10B981"
-  },
-  {
-    "name": "Microwd",
-    "niche": "UI Library",
-    "description": "A React Native UI library built with TypeScript and Tailwind CSS, designed to provide a consistent and customizable set of components for mobile app development.",
-    "link": "https://tamaui.com",
-    "color": "#7F1DFF"
+    "name": "Sync",
+    "niche": "Banking",
+    "description": "Sync streamlines ATM maintenance by detecting faults in real time, automatically dispatching the nearest engineer, and providing live health data, diagnostics, and AI-powered repair suggestions before arrival.",
+    "link": "https://drive.google.com/drive/u/0/folders/1YH5v36w2zJZTj5Zp8VRscxMyV2xc0VCp",
+    "color": "#3B82F6"
   },
   {
     "name": "Signan",
-    "niche": "Blog",
-    "description": "A personal blog built with NextJS and Tailwind CSS, where I share my thoughts on software development, technology trends, and career advice.",
-    "link": "https://ayomide-blog.vercel.app",
+    "niche": "Education",
+    "description": "A coach-learner platform where coaches create and manage courses, while learners enroll, track progress, and set personalized goals.",
+    "link": "https://signan-coach-web-beta.vercel.app/",
     "color": "#F59E0B"
-  },
-  {
-    "name": "Sync",
-    "niche": "Utility",
-    "description": "A simple weather application built with ReactJS and OpenWeatherMap API, allowing users to check the current weather and forecast for any location.",
-    "link": "https://weather-app-ayomide.vercel.app",
-    "color": "#3B82F6"
   }
 ]
