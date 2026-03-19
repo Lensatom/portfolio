@@ -32,6 +32,7 @@ export function ProjectsSection() {
 
   return (
     <Container
+      id="projects"
       onClick={handleContainerClick}
       className="relative min-h-[72vh] sm:min-h-[78vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden transition-colors duration-700 cursor-pointer"
       style={{ background: `linear-gradient(135deg, ${currentProject.color} 0%, ${currentProject.color}bb 60%, ${currentProject.color}66 100%)` }}

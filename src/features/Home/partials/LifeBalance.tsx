@@ -50,7 +50,7 @@ function LifeBalance() {
 
   return (
     <>
-      <div className="h-24 hidden md:block" />
+      <div id="life" className="h-24 hidden md:block" />
       <div ref={sectionRef} className="relative overflow-hidden">
         <img
           src={LeisureImage}

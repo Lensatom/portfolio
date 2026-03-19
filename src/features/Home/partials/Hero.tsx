@@ -6,7 +6,7 @@ import SkillsCarousel from "../components/SkillsCarousel"
 
 function Hero() {
   return (
-    <Container className="relative lg:min-h-screen py-24 box-content lg:pt-10 lg:!pb-10 flex md:flex-row flex-col-reverse items-center justify-center">
+    <Container id="hero" className="relative lg:min-h-screen py-24 box-content lg:pt-10 lg:!pb-10 flex md:flex-row flex-col-reverse items-center justify-center">
       <div className="w-full flex flex-col items-center md:items-start text-center md:text-left">
         <Typography variant="subhead">Hi, I'm</Typography>
         <Typography variant="head">Ayomide Atayero,</Typography>
