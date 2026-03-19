@@ -46,7 +46,7 @@ function App() {
       <div className={`${mode === "dark" ? "bg-[hsl(200,30%,12%)]" : "bg-gray-50"}`}>
         <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} z-[99] w-full fixed transition-transform duration-300 ease-out ${showHeader ? "translate-y-0" : "-translate-y-full"}`}>
           <Header />
-          <Line />
+          <Line mode='light' />
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
