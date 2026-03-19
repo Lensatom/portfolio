@@ -1,6 +1,6 @@
 import { Container, Line, Typography } from "../../../components"
-import WorkExperience from "../../Experience/components/WorkExperience"
-import ExperienceData from "../../Experience/data/ExperienceData.json"
+import WorkExperience from "../components/WorkExperience"
+import ExperienceData from "../data/ExperienceData.json"
 
 function WorkExperienceSection() {
   return (

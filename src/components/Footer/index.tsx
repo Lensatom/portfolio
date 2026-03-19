@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <Line mode="dark" />
         <Typography mode="dark" variant="body">
-          Frontend engineer in Nigeria <br />
+          Software Engineer <br />
         </Typography>
         <Typography mode="dark" variant="body" className='flex items-center gap-2'>
           <FaCopyright />
