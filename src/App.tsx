@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Footer, Header, Line } from "./components";
 import { ModeContext } from './context/ModeContext';
-import { Blogs, Contact, Experience, Home, Projects } from "./features";
+import { Home } from "./features";
 
 function App() {
 
@@ -48,15 +48,9 @@ function App() {
           <Header />
           <Line />
         </div>
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
         <Footer />
       </div>
     </ModeContext.Provider>

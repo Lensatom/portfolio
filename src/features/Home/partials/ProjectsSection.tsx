@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BsArrowLeft, BsArrowRight, BsBoxArrowUpRight } from 'react-icons/bs'
 import { Container, Typography } from "../../../components"
-import ProjectsData from "../../projects/data/ProjectsData.json"
+import ProjectsData from "../data/ProjectsData.json"
 
 export function ProjectsSection() {
   
@@ -33,18 +33,18 @@ export function ProjectsSection() {
   return (
     <Container
       onClick={handleContainerClick}
-      className="relative aspect-video lg:min-h-screen flex items-center justify-center overflow-hidden transition-colors duration-700 cursor-pointer"
+      className="relative min-h-[72vh] sm:min-h-[78vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden transition-colors duration-700 cursor-pointer"
       style={{ background: `linear-gradient(135deg, ${currentProject.color} 0%, ${currentProject.color}bb 60%, ${currentProject.color}66 100%)` }}
     >
       <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 20% 80%, white 1px, transparent 1px), radial-gradient(circle at 80% 20%, white 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
-      <div className="absolute top-6 left-8 w-full flex justify-between items-center pr-24 lg:top-8 lg:right-10 text-white/50 text-xs lg:text-sm font-mono tracking-widest">
-        <Typography variant="head" className='text-white'>Personal Projects</Typography>
+      <div className="absolute top-4 left-0 right-0 px-4 sm:px-6 lg:top-8 lg:px-10 flex justify-between items-center text-white/50 text-[10px] sm:text-xs lg:text-sm font-mono tracking-widest">
+        <Typography variant="subhead" className='text-white'>Personal Projects</Typography>
         {String(projectCurrent + 1).padStart(2, "0")} / {String(ProjectsData.length).padStart(2, "0")}
       </div>
 
       <div
-        className="relative z-10 text-center px-6 lg:px-24 max-w-3xl w-full transition-opacity duration-250"
+        className="relative z-10 text-center px-4 sm:px-8 lg:px-24 pt-16 pb-14 sm:pt-20 sm:pb-16 lg:py-0 max-w-3xl w-full transition-opacity duration-250"
         style={{ opacity: projectFading ? 0 : 1 }}
       >
         <span className="inline-block px-4 py-1 mb-4 lg:mb-6 rounded-full bg-white/20 text-white text-xs font-semibold tracking-widest uppercase backdrop-blur-sm">
@@ -78,9 +78,9 @@ export function ProjectsSection() {
           navigateProjects(-1)
         }}
         aria-label="Previous project"
-        className="absolute left-3 lg:left-8 top-1/2 -translate-y-1/2 size-14 lg:size-16 rounded-md bg-white/20 hover:bg-white/35 backdrop-blur-sm flex items-center justify-center text-white transition-colors"
+        className="absolute left-2 sm:left-3 lg:left-8 top-1/2 -translate-y-1/2 size-10 sm:size-12 lg:size-16 rounded-md bg-white/20 hover:bg-white/35 backdrop-blur-sm flex items-center justify-center text-white transition-colors"
       >
-        <BsArrowLeft size={34} />
+        <BsArrowLeft size={24} />
       </button>
 
       <button
@@ -89,12 +89,12 @@ export function ProjectsSection() {
           navigateProjects(1)
         }}
         aria-label="Next project"
-        className="absolute right-3 lg:right-8 top-1/2 -translate-y-1/2 size-14 lg:size-16 rounded-md bg-white/20 hover:bg-white/35 backdrop-blur-sm flex items-center justify-center text-white transition-colors"
+        className="absolute right-2 sm:right-3 lg:right-8 top-1/2 -translate-y-1/2 size-10 sm:size-12 lg:size-16 rounded-md bg-white/20 hover:bg-white/35 backdrop-blur-sm flex items-center justify-center text-white transition-colors"
       >
-        <BsArrowRight size={34} />
+        <BsArrowRight size={24} />
       </button>
 
-      <div className="absolute bottom-4 lg:bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
+      <div className="absolute bottom-3 sm:bottom-4 lg:bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
         {ProjectsData.map((_, i) => (
           <button
             key={i}

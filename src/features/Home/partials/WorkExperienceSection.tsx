@@ -4,7 +4,7 @@ import ExperienceData from "../../Experience/data/ExperienceData.json"
 
 function WorkExperienceSection() {
   return (
-    <Container className="pt-16 lg:py-24 pb-28 flex flex-col !gap-6">
+    <Container className="py-16 lg:py-44 flex flex-col !gap-6">
       <Typography variant="head">Work Experience</Typography>
       <Line />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">

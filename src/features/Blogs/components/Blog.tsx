@@ -10,16 +10,25 @@ type WorkExperienceType = {
 const Blog = (props:WorkExperienceType) => {
   
   return (
-    <div className="flex flex-col py-24 px-5 bg-primary/10 rounded-md">
-      <Typography variant="subhead" className="!font-bold">{props.title}</Typography>
-      <Typography variant="subbody" className="opacity-80">Published {props.datePublished}</Typography>
-      <Typography variant="subbody" className="mt-4">{props.body}</Typography>
-      <a href={props.link} target="_blank">
-        <Typography variant="subbody" className="mt-4 flex items-center gap-2 underline">
-          Read full article
-        </Typography>
+    <article className="flex flex-col gap-3 px-5 py-6 rounded-lg bg-white/40 border border-black/10 backdrop-blur-[1px]">
+      <Typography variant="subbody" className="uppercase tracking-[0.12em] !text-[11px] !text-gray-500">
+        Published {props.datePublished}
+      </Typography>
+      <Typography variant="subhead" className="!font-semibold !text-[1.08rem] leading-snug">
+        {props.title}
+      </Typography>
+      <Typography variant="subbody" className="!text-sm !leading-6 !text-gray-600">
+        {props.body}
+      </Typography>
+      <a
+        href={props.link}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex w-fit items-center border-b border-gray-400/60 pb-0.5 text-sm text-gray-700 transition-colors hover:text-gray-900"
+      >
+        Read article
       </a>
-    </div>
+    </article>
   )
 }
 

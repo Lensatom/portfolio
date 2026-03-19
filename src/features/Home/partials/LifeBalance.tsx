@@ -50,7 +50,7 @@ function LifeBalance() {
 
   return (
     <>
-      <div className="h-28" />
+      <div className="h-24 hidden md:block" />
       <div ref={sectionRef} className="relative overflow-hidden">
         <img
           src={LeisureImage}
@@ -61,7 +61,7 @@ function LifeBalance() {
 
         <div className="relative min-h-[420px] lg:min-h-[480px]">
           <svg
-            className="absolute inset-0 z-10 h-full w-full pointer-events-none"
+            className="absolute inset-0 z-10 h-full w-full pointer-events-none opacity-90 md:opacity-100"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
             aria-hidden="true"
@@ -70,18 +70,18 @@ function LifeBalance() {
             <defs>
               <mask id="maskRight">
                 <rect x="0" y="0" width="100" height="100" fill="white" />
-                <rect x="52" y="10" width="40" height="80" fill="black" />
+                <rect x="52" y="10" width="40" height="80" fill="black" className='hidden md:block' />
               </mask>
             </defs>
             <rect x="0" y="0" width="100" height="100" fill="rgb(255, 255, 255)" mask="url(#maskRight)" />
           </svg>
 
           <div className="absolute inset-0 z-20 px-3 md:px-8 lg:px-44 py-10 md:py-16 flex items-center">
-            <div className="w-full lg:w-[48%] grid grid-cols-2 gap-2">
+            <div className="w-full lg:w-[48%] grid lg:grid-cols-2 gap-2">
               <div>
-                <Typography variant="head">When I'm not coding</Typography>
+                <Typography variant="head">When I'm not coding...</Typography>
               </div>
-              <div className="flex flex-col gap-1 col-span-2">
+              <div className="flex flex-col gap-1 col-span-2 mt-3">
                 <Typography variant="subhead" className="!font-bold">Filmmaking</Typography>
                 <Typography variant="body">
                   I create short films which I post <br />
@@ -106,7 +106,7 @@ function LifeBalance() {
           </div>
         </div>
 
-        <div className="relative min-h-[460px] lg:min-h-[520px]">
+        <div className="relative min-h-[400px] lg:min-h-[520px]">
           <svg
             className="absolute inset-0 z-10 h-full w-full pointer-events-none"
             viewBox="0 0 100 100"
@@ -117,7 +117,7 @@ function LifeBalance() {
             <defs>
               <mask id="maskLeft">
                 <rect x="0" y="0" width="100" height="100" fill="white" />
-                <rect x="8" y="10" width="40" height="75" fill="black" />
+                <rect x="8" y="10" width="40" height="75" fill="black" className='hidden md:block' />
               </mask>
             </defs>
             <rect x="0" y="0" width="100" height="100" fill="rgb(255, 255, 255)" mask="url(#maskLeft)" />
@@ -139,7 +139,7 @@ function LifeBalance() {
           </div>
         </div>
       </div>
-      <div className="h-28" />
+      <div className="h-24 hidden md:block" />
     </>
   )
 }

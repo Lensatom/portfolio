@@ -48,7 +48,7 @@ function Hero() {
       <div className="w-full h-3/4 min-h-[300px] md:min-h-[420px] flex items-center overflow-hidden blob">
         <img src={AyomideImage} alt="skills" className="w-full h-full object-cover" />
       </div>
-      <div className="absolute bottom-4 left-0 right-0">
+      <div className="absolute -bottom-2 md:bottom-4 left-0 right-0">
         <SkillsCarousel />
       </div>
     </Container>
