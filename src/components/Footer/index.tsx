@@ -1,6 +1,6 @@
 import { FaCopyright } from 'react-icons/fa'
 import { Container, Line, Typography } from '..'
-import { NavLink } from 'react-router-dom'
+import { RESUME_LINK } from '../../constants'
 
 const Footer = () => {
   return (
@@ -34,22 +34,22 @@ const Footer = () => {
         <Typography mode="dark" variant='subhead' className='!bold'>Pages</Typography>
         <Line />
         <Typography mode="dark" variant="body">
-          <NavLink to="/">Home</NavLink>
+          <a href="#hero">Home</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/experience">Experience</NavLink>
+          <a href="#experiences">Experience</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/projects">Projects</NavLink>
+          <a href="#projects">Projects</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/blogs">Blogs</NavLink>
+          <a href="#blogs">Blogs</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <NavLink to="/contact">Contact</NavLink>
+          <a href="#footer">Contact</a>
         </Typography>
         <Typography mode="dark" variant="body">
-          <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>Resume</a>
+          <a href={RESUME_LINK} target='_blank'>Resume</a>
         </Typography>
       </div>
       <div className='flex flex-col gap-3 z-10'>
