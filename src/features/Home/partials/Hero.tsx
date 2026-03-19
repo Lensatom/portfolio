@@ -1,7 +1,7 @@
 import { BsBoxArrowUpRight } from "react-icons/bs"
-import { NavLink } from "react-router-dom"
 import AyomideImage from '../../../assets/ayomide.jpg'
 import { Button, Container, Typography } from "../../../components"
+import { RESUME_LINK } from "../../../constants"
 import SkillsCarousel from "../components/SkillsCarousel"
 
 function Hero() {
@@ -16,10 +16,8 @@ function Hero() {
           Passionate about problem-solving, I design systems that are reliable, scalable, and maintainable.
         </Typography>
         <div className="mt-5 flex gap-4">
-          <NavLink to="/projects">
-            <Button variant="blue" type="button" className="px-10">My Projects</Button>
-          </NavLink>
-          <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>
+          <Button variant="blue" onClick={() => {window.location.href = '#projects'}} type="button" className="px-10">My Projects</Button>
+          <a href={RESUME_LINK} target='_blank'>
             <Button variant="gray" type="button" className="flex items-center gap-2">
               Resume
               <BsBoxArrowUpRight />
