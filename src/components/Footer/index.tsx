@@ -1,18 +1,18 @@
 import { FaCopyright } from 'react-icons/fa'
-import { Container, Typography } from '..'
+import { Container, Line, Typography } from '..'
 import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <Container className='!bg-primary/30 grid grid-cols-2 lg:grid-cols-4 !gap-10 py-10 lg:py-24'>
-      <div className='flex flex-col gap-3'>
+    <Container className='relative overflow-hidden bg-gray-700 grid grid-cols-2 lg:grid-cols-4 !gap-10 py-10 lg:py-24 lg:pb-44'>
+      <div className='flex flex-col gap-3 z-10'>
         <div className='flex items-baseline gap-1'>
           <Typography mode="dark" variant='subhead' className='!bold flex'>
             Ayomide
           </Typography>
           <div className='w-1 h-1 bg-red-500 font-bold rounded-full'></div>
         </div>
-        <div className='bg-gray-500 h-[1px] w-full' />
+        <Line mode="dark" />
         <Typography mode="dark" variant="body">
           Frontend engineer in Nigeria <br />
         </Typography>
@@ -30,9 +30,9 @@ const Footer = () => {
           +234-913-6852-885
         </Typography>
       </div>
-      <div className='flex flex-col gap-3'>
+      <div className='flex flex-col gap-3 z-10'>
         <Typography mode="dark" variant='subhead' className='!bold'>Pages</Typography>
-        <div className='bg-gray-500 h-[1px] w-full' />
+        <Line />
         <Typography mode="dark" variant="body">
           <NavLink to="/">Home</NavLink>
         </Typography>
@@ -52,9 +52,9 @@ const Footer = () => {
           <a href='https://drive.google.com/file/d/1KqcCiw5OWvVuM2JwaIESOn9W9ZcCVbu9/view?usp=sharing' target='_blank'>Resume</a>
         </Typography>
       </div>
-      <div className='flex flex-col gap-3'>
+      <div className='flex flex-col gap-3 z-10'>
         <Typography mode="dark" variant='subhead' className='!bold'>Work contact</Typography>
-        <div className='bg-gray-500 h-[1px] w-full' />
+        <Line />
         <Typography mode="dark" variant="body">
           <a href="https://wa.me/+2349136852885" target="_blank">WhatsApp</a>
         </Typography>
@@ -65,11 +65,11 @@ const Footer = () => {
           <a href="https://github.com/lensatom" target="_blank">GitHub</a>
         </Typography>
       </div>
-      <div className='flex flex-col gap-3'>
-        <Typography mode="dark" variant='subhead' className='!bold'>Social life</Typography>
-        <div className='bg-gray-500 h-[1px] w-full' />
+      <div className='flex flex-col gap-3 z-10'>
+        <Typography mode="dark" variant='subhead' className='!bold'>Socials</Typography>
+        <Line />
         <Typography mode="dark" variant="body">
-          <a href="https://twitter.com/Ayomide_Lens" target="_blank">X (Formerly Twitter)</a>
+          <a href="https://twitter.com/Ayomide_Lens" target="_blank">X</a>
         </Typography>
         <Typography mode="dark" variant="body">
           <a href="https://www.instagram.com/lensatom/" target="_blank">Instagram</a>
@@ -78,6 +78,8 @@ const Footer = () => {
           <a href="https://www.tiktok.com/@lensatom" target="_blank">TikTok</a>
         </Typography>
       </div>
+      <span className='absolute -bottom-24 -right-[40%] text-[300px] font-extrabold text-transparent' style={{WebkitTextStroke: '2px rgba(255, 255, 255, 0.04)'}}>AYOMIDE</span>
+      <span className='absolute -bottom-24 -left-[60%] text-[300px] font-extrabold text-transparent' style={{WebkitTextStroke: '2px rgba(255, 255, 255, 0.04)'}}>AYOMIDE</span>
     </Container>
   )
 }

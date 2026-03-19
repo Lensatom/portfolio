@@ -44,9 +44,7 @@ function App() {
   return (
     <ModeContext.Provider value={{mode, setMode}}>
       <div className={`${mode === "dark" ? "bg-[hsl(200,30%,12%)]" : "bg-gray-50"}`}>
-        <div
-          className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} z-[99] w-full fixed transition-transform duration-300 ease-out ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
-        >
+        <div className={`${mode === "dark" ? "bg-[#121212]" : "bg-gray-50"} z-[99] w-full fixed transition-transform duration-300 ease-out ${showHeader ? "translate-y-0" : "-translate-y-full"}`}>
           <Header />
           <Line />
         </div>
@@ -59,9 +57,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <div className='bg-[#121212]'>
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </ModeContext.Provider>
   )

@@ -1,12 +1,10 @@
-import { useContext } from 'react'
-import { ModeContext } from '../../context/ModeContext'
 
-const Line = () => {
+const Line = ({ mode }: { mode?: string }) => {
 
-  const { mode } = useContext(ModeContext)
+  // const { mode: contextMode } = useContext(ModeContext)
 
   return (
-    <div className={`${mode === "light" ? "bg-gray-300" : "bg-primary/50"} h-[1px] w-full`} />
+    <div className={`${mode === "light" ? "bg-gray-300" : "bg-white/10"} h-[1px] w-full`} />
   )
 }
 
